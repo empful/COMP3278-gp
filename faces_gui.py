@@ -141,16 +141,17 @@ while True:
                          sg.Text("{}".format(cs[4]), size=(40, 2), font=('Any', 12))],
                         [sg.Text("Starting time:", size=(20, 2), font=('Any', 12, 'bold'), text_color='#00ff00'),
                          sg.Text("{}".format(cs[5]), size=(40, 2), font=('Any', 12))],
-                        #bug - the second link does not work
                         [sg.Text("Lecture/Tutorial notes:", size=(20, 2), font=('Any', 12, 'bold'), text_color='#00ff00'),
                          sg.Text("{}".format(cs[6]), font=('Any', 12), enable_events=True, key='link',
-                                 text_color='#0000ff'), sg.Open()],
+                                 text_color='#0000ff'), sg.Open('open')],
                         [sg.Exit()]]
                     win = sg.Window('Show Details Courses ', layout)
                     while 1:
                         event, values = win.Read()
                         if event == 'Open':
                             webbrowser.open(cs[3])
+                        elif (event == 'open'):
+                            webbrowser.open(cs[6])
                         else:
                             break
 
