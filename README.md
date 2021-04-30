@@ -33,12 +33,12 @@ python train.py
 `train.yml` and `labels.pickle` will be created at the current folder.
 
 
-### 3. Login Interface
+### 2. Login Interface
 ```
 python faces_gui.py
 ```
 
-### 4. Testing lecture/tutorial
+### 3. Testing lecture/tutorial
 To test the function that informs the student if he/she has lecture/tutorial in one hour, please edit the date and time in line 166 and 171 of facerecognition.sql respectively. We assume that tutorials and lecture last at least one hour and there is no overlap.
 ```
 line 166: insert into lecture values ("Lecture 1", "COMP3278", "2021-1", "2021-04-29", "22:30:00", "https://hku.zoom.us", "Zoom", "https://moodle.hku.hk/course/view.php?id=80047", "Dr. Luo", "Today's topic is Indexing");
@@ -46,7 +46,7 @@ line 166: insert into lecture values ("Lecture 1", "COMP3278", "2021-1", "2021-0
 line 171: insert into tutorial values ("Tutorial 1", "COMP3278", "2021-1", "2021-04-29", "22:30:00", "https://hku.zoom.us", "CPD-2.42", "https://moodle.hku.hk/", "tutor_name", "tutor_msg");
 
 ```
-### 5. Testing email function
+### 4. Testing email function
 To test the email function, please change the original email address to your own email on line 131 of facerecognition.sql.
 ```
 line 131: INSERT INTO student VALUES (3, "JACK", "2390778522@qq.com", NOW(), NOW());
