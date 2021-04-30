@@ -1,6 +1,13 @@
 # COMP3278 Face Recognition Project
 
 *******
+### Members
+
+Chen Huijun	3035533367
+He Yifu	3035533836
+Lee Yu-Ting	3035555743
+Yunxiang Fu	3035719026
+Yihua Chen	3035661346
 
 ### Functions
 
