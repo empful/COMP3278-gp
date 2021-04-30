@@ -10,6 +10,8 @@
 4. The student can choose to send this information to his/her email by clicking the "SendMail" button.
 5. If student does not have classes at the moment, the GUI will display two timetables: one for lectures and one for tutorials.
 6. The login time and the period of stay is stored in the login_history table
+7. We have a friendly reminder to lower the confidence level during login if the student cannot login at first.
+8. The background color of our GUI depends on the student's UID.
 
 
 ## Run
